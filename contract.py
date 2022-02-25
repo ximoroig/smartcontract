@@ -85,7 +85,7 @@ print("Output from greet()")
 print(greeter.functions.greet().call())
 
 nonce = W3.eth.getTransactionCount(address1)
-tx_dict = greeter.functions.setGreeting('Joaquin Roig 1280627').buildTransaction({
+tx_dict = greeter.functions.setGreeting('Hello from the contract deployed by Joaquin Roig with student number 1280627').buildTransaction({
   'chainId': 3,
   'gas': 1400000,
   'gasPrice': w3.toWei('40', 'gwei'),
@@ -108,7 +108,7 @@ while tx_receipt is None and (count < 300):
 if tx_receipt is None:
   print (" {'status': 'failed', 'error': 'timeout'} ")
 
-#tx_hash = greeter.functions.setGreeting('Nihao').transact({"from":account1.address})
+#tx_hash = greeter.functions.setGreeting('Hello from the contract deployed by Joaquin Roig with student number 1280627').transact({"from":account1.address})
 #tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash)
 print("Output from greet()")
 print(greeter.functions.greet().call({"from":account1.address}))
