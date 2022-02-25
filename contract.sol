@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 contract Greeter {
   string public greeting;
 
-  constructor('Good luck') public {
+  constructor() public {
     greeting = 'Good luck';
   }
 
