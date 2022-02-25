@@ -111,5 +111,5 @@ if tx_receipt is None:
 #tx_hash = greeter.functions.setGreeting('Nihao').transact({"from":account1.address})
 #tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash)
 print("Output from greet()")
-print(greeter.functions.greet("Joaquin Roig 1280627").call({"from":account1.address}))
+print(greeter.functions.greet().call({"from":account1.address}))
 #'Nihao'
