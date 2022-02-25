@@ -3,8 +3,8 @@ pragma solidity ^0.8.0;
 contract Greeter {
   string public greeting;
 
-  constructor() public {
-    greeting = 'Hello';
+  constructor('Good luck') public {
+    greeting = 'Good luck';
   }
 
   function setGreeting(string memory _greeting) public {
